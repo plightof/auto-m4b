@@ -45,7 +45,7 @@ jobs:
           file: ./Dockerfile
           # Note: tags has to be all lower-case
           tags: |
-            seanap/auto-m4b:latest 
+            plightof/auto-m4b:latest 
           # build on feature branches, push only on main branch
           push: ${{ github.ref == 'refs/heads/main' }}
 
