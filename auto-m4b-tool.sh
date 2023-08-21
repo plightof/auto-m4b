@@ -110,7 +110,7 @@ while [ $m -ge 0 ]; do
 					echo Bitrate = $bit
 					echo The folder "$book" will be merged to "$m4bfile"
 					echo Starting Conversion
-					m4b-tool merge "$book" -n -q --audio-bitrate="$bit" --skip-cover --use-filenames-as-chapters --no-chapter-reindexing --audio-codec=libfdk_aac --jobs="$CPUcores" --output-file="$m4bfile" --logfile="$logfile"
+					m4b-tool merge "$book" -n -q --audio-bitrate="$bit" --skip-cover --no-chapter-import --audio-codec=libfdk_aac --jobs="$CPUcores" --output-file="$m4bfile" --logfile="$logfile"
 					mv "$inputfolder$book" "$binfolder"
 				fi
 				echo Finished Converting
